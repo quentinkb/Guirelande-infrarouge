@@ -1,4 +1,0 @@
-config BR2_PACKAGE_KHELLOWORLD
-       bool lights
-       help
-	driver lights controller

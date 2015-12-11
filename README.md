@@ -11,6 +11,7 @@ Les développeurs présents sur le projet sont les suivants :
 # Matériel nécessaire
 Le matériel nécessaire, en dehors des LEDS, Résistances, condensateurs et LED Infrarouge sont 
 2 OLIMEX OlinuXino. 
+![OlinuXino](images/olinuxino.jpg)
 ## Driver
 Le noyau Linux ainsi que les drivers ont été développés grace à buildroot
 [Lien de documentation buildroot](https://buildroot.uclibc.org/)
