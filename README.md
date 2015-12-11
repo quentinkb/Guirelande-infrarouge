@@ -55,7 +55,7 @@ infrarouge
 
 ![Exemple de montage](images/montage.jpg)
 
-# Interface utilisateur pour la guirelande 
+# Utilisation 
 ## Communication guirelande 
 ### Communication directe
 Il est possible de changer de mode de guirelande en écrivant directement dans le fichier afin de communiquer avec la guirelande 
