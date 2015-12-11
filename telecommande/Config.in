@@ -1,0 +1,4 @@
+config BR2_PACKAGE_PROJET
+	bool infra
+	help
+	driver hello world
