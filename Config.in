@@ -1,0 +1,4 @@
+config BR2_PACKAGE_LIGHTS
+       bool lights
+       help
+	driver lights controller
