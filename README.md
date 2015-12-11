@@ -30,34 +30,37 @@ Le noyau Linux ainsi que les drivers ont été développés grace à buildroot
 	{ 2, GPIOF_IN, "INFRAROUGE" },
 	{ 4, GPIOF_OUT_INIT_HIGH, "LED VERTE" },
 	{ 5, GPIOF_OUT_INIT_HIGH, "LED ROUGE" },};
+
+
 ### Pour la telecomande
 
 	* 1 : Bouton
-	 Les numéros de GPIOS, sont les numéros LINUX.
-	 Voici la déclaration de la gpio utilisée.
+Les numéros de GPIOS, sont les numéros LINUX.
+Voici la déclaration de la gpio utilisée.
 
     static struct gpio button_gpio[] = {
 	{1, GPIOF_IN, "Button"}};
 
-	Nous avons aussi utilisé la sortie PWM afin d'alimenter la led infrarouge
-	La déclaration pour l'utilisation de cette sortie est la suivante :
+#### Utilisation du PWM 
 
-	struct pwm_device * pwm0;
+Il est nécessaire d'utiliser la sortie PWM afin d'alimenter la led infrarouge
+La déclaration pour l'utilisation de cette sortie est la suivante :
 
-	Configuration (les valeurs 13000 et 26000 définissent la fréquence
-		du signal envoyé par la PWM et correspondent à celles attendues
-		pour un signal infrarouge):
+    struct pwm_device * pwm0; 
 
-	pwm0 = pwm_request(2,"test-pwm");
-	pwm_config(pwm0,13000,26000);
+Configuration (les valeurs 13000 et 26000 définissent la fréquence du signal envoyé par la PWM et correspondent à celles attendues 
+pour un signal infrarouge):
 
-	Activation :
+    pwm0 = pwm_request(2,"test-pwm");
+    pwm_config(pwm0,13000,26000);
 
-	pwm_enable(pwm0);
+Activation :
 
-	Désactivation :
+    pwm_enable(pwm0);
 
-	pwm_disable(pwm0);
+Désactivation :
+
+    pwm_disable(pwm0);
 
 
 # Répartition du travail
