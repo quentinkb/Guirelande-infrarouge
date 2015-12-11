@@ -26,11 +26,21 @@ Le premier groupe a travaillé sur le développement de la guirelande.
 		* Mode 2 : 3 LEDS avec clignotement simultané
 
 Le deuxième groupe a travaillé sur la "telecomande infrarouge"
+
 	* Montage de la LED infrarouge
 	* Montage du bouton avec gestion interruption (activation de la LED)
 
+# Montage
+
+Voici un exemple de montage possible avec en arrière plan la guirelande et devant, la telecomande 
+infrarouge
+
+![Exemple de montage](images/montage.jpg)
+
 # Interface utilisateur pour la guirelande 
-## Ecriture 
+## Communication guirelande 
 Il est possible de changer de mode de guirelande en écrivant directement dans le fichier afin de communiquer avec la guirelande 
+
     echo "\x0" > /dev/
+
 Envoyer 0,1 ou 2 selon le mode choisi
