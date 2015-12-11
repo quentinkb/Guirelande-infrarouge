@@ -35,8 +35,8 @@ Le noyau Linux ainsi que les drivers ont été développés grace à buildroot
 ### Pour la telecomande
 
 	* 1 : Bouton
-Les numéros de GPIOS, sont les numéros LINUX.
-Voici la déclaration de la gpio utilisée.
+ Les numéros de GPIOS, sont les numéros LINUX.
+ Voici un exemple de déclaration de GPIOS
 
     static struct gpio button_gpio[] = {
 	{1, GPIOF_IN, "Button"}};
